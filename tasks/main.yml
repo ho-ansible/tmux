@@ -9,7 +9,7 @@
 
 - name: TMux | config
   tags:
-  - config
-  copy:
-    src: tmux.conf
-    dest: /home/{{ ansible_user }}/.tmux.conf
+    - config
+  template:
+    src: tmux.conf.j2
+    dest: /etc/tmux.conf
