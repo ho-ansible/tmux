@@ -2,10 +2,9 @@
 
 - name: TMux | package
   tags:
-  - package
+    - package
   package:
     name: tmux
-    state: latest
 
 - name: TMux | config
   tags:
