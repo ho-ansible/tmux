@@ -1,0 +1,13 @@
+## ~/.tmux.conf
+# Terminal multiplexer, user config
+
+bind R source-file ~/.tmux.conf \; display-message "Reloaded config"
+bind S command-prompt -p host:,opts: "new-window -n %1 'exec ssh %1 %2'"
+
+# SSH agent handling 
+# sync these vars upon attach
+set -g update-environment \
+	"DISPLAY WINDOWID XAUTHORITY SSH_ASKPASS SSH_AGENT_PID SSH_CONNECTION"
+setenv -g SSH_AUTH_SOCK $HOME/.ssh/agent.sock	# symlink: see /etc/bash.bashrc
+
+{{ tmux_extra_cfg }}
