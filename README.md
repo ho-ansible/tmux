@@ -1,5 +1,10 @@
-# ho-ansible/tmux
+# Ansible role: tmux
 Ansible role for terminal multiplexer
 
-# Role variables
+## Requirements
+
+## Role variables
 + `tmux_extra_cfg`: lines to add to /etc/tmux.conf
+
+## Author
+Ansible role by [Sean Ho](https://github.com/ho-ansible/)
