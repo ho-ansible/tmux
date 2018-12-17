@@ -13,7 +13,7 @@ bind F4 send F4
 bind | split-window -h
 bind - split-window -v
 
-set assume-paste-time 50		# Ignore fast escape combos (copy/paste) (ms)
+set -g assume-paste-time 50		# Ignore fast escape combos (copy/paste) (ms)
 
 ### Window Settings
 set -gw aggressive-resize on            # Constrain window size to max of client connected to window
@@ -26,7 +26,6 @@ set -gw visual-activity on              # newer tmux
 
 set -g status-left ''           # Status Bar
 set -g status-right '[#h]'
-set -g status-utf8 on
 
 set -g set-titles on                    # Control title of client xterm
 set -g set-titles-string '#T (#W@#h)'
