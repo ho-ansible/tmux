@@ -1,0 +1,10 @@
+#! /usr/bin/env ansible-playbook
+# Configure tmux
+# Replace 'tmux' with your own inventory group
+---
+- name: tmux | terminal multiplex
+  hosts: tmux
+  roles:
+    - role: tmux
+      tags:
+        - tmux

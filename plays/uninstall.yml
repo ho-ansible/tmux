@@ -1,0 +1,12 @@
+#! /usr/bin/env ansible-playbook
+# Uninstall tmux terminal multiplexer
+# Replace 'tmux' with your own inventory group
+---
+- name: tmux | uninstall
+  hosts: tmux
+  tasks:
+    - include_role:
+        name: tmux
+        tasks_from: uninstall.yml
+      tags:
+        - tmux
