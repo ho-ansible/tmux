@@ -5,8 +5,8 @@
 - name: tmux | uninstall
   hosts: tmux
   tasks:
-    - include_role:
-        name: tmux
-        tasks_from: uninstall.yml
-      tags:
-        - tmux
+  - include_role:
+      name: tmux
+      tasks_from: uninstall.yml
+    tags:
+    - tmux

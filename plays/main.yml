@@ -5,6 +5,6 @@
 - name: tmux | terminal multiplex
   hosts: tmux
   roles:
-    - role: tmux
-      tags:
-        - tmux
+  - role: tmux
+    tags:
+      - tmux

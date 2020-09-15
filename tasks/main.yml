@@ -2,16 +2,16 @@
 
 - name: TMux | package
   tags:
-    - package
+  - package
   package:
     name: tmux
 
 - name: TMux | config
   tags:
-    - config
+  - config
   template:
     src: "{{ item.src }}.j2"
     dest: "{{ item.dest }}"
   loop:
-    - { src: tmux.conf, dest: /etc/tmux.conf }
-    - { src: user.conf, dest: "/home/{{ ansible_user }}/.tmux.conf" }
+  - { src: tmux.conf, dest: /etc/tmux.conf }
+  - { src: user.conf, dest: "/home/{{ ansible_user }}/.tmux.conf" }

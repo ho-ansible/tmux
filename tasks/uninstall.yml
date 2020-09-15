@@ -9,5 +9,5 @@
     path: "{{ item }}"
     state: absent
   loop:
-    - /etc/tmux.conf
-    - /home/{{ ansible_user }}/.tmux.conf
+  - /etc/tmux.conf
+  - /home/{{ ansible_user }}/.tmux.conf
