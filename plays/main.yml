@@ -7,4 +7,4 @@
   roles:
   - role: tmux
     tags:
-      - tmux
+    - tmux
