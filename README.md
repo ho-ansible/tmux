@@ -1,5 +1,5 @@
 # Ansible role: tmux
-Ansible role for terminal multiplexer
+Terminal multiplexer, like `screen`.  Multiple, persistent shells.
 
 ## Requirements
 Only tested on Debian stable, for now.
