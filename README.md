@@ -11,6 +11,9 @@ Only tested on Debian stable, for now.
 + `main.yml`: apply role
 + `uninstall.yml`: remove. Run before removing config from inventory.
 
+## Dependencies
+None.
+
 ## License
 Ansible role licensed [MIT](LICENSE).
 
