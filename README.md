@@ -17,5 +17,5 @@ None.
 ## License
 Ansible role licensed [MIT](LICENSE).
 
-## Author
+## Author Information
 Ansible role by [Sean Ho](https://github.com/ho-ansible/)
