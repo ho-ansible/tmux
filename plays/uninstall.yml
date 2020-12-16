@@ -1,6 +1,6 @@
 #! /usr/bin/env ansible-playbook
 # Uninstall tmux terminal multiplexer
-# Replace 'tmux' with your own inventory group
+# Run prior to removing host from inventory groups, so hostvars are accessible
 ---
 - name: tmux | uninstall
   hosts: tmux
